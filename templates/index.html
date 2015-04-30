@@ -1,5 +1,43 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Software Engineer and Developer in São Paulo - Brazil">
+	<meta name="author"      content="Guilherme Toti">
+	
+	<title>Guilherme Toti</title>
 
-{% block content %}
-	Content goes here
-{% endblock %}
+	<link rel="shortcut icon" href="{{ url_for('static', filename='images/gt_favicon.png') }}">
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/magister.css') }}">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
+</head>
+
+<body class="theme-invert">
+
+	<!-- Main (Home) section -->
+	<section class="section" id="head">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2 text-center">
+					<h1 class="title">Guilherme Toti</h1>
+					<p class="lead">Software Engineer | Developer</p>
+					<p>Python | PHP | MySQL | Oracle | HTML5 | CSS3 | jQuery | Ajax</p>
+					<ul class="list-inline list-social m_top_40">
+						<li><a href="https://www.facebook.com/GuiMToti" class="btn btn-link"><i class="fa fa-facebook fa-fw"></i> Facebook</a></li>
+						<li><a href="https://github.com/guilherme-toti" class="btn btn-link"><i class="fa fa-github fa-fw"></i> Github</a></li>
+						<li><a href="mailto:guilhermetoti@gmail.com" class="btn btn-link"><i class="fa fa-send-o fa-fw"></i> E-mail</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<script src="{{ url_for('static', filename='js/modernizr.custom.72241.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/magister.js') }}"></script>
+</body>
+</html>
